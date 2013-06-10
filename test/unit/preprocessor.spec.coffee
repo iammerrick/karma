@@ -19,7 +19,7 @@ describe 'preprocessor', ->
       done 'new-content'
 
     mocks_ =
-      fs: mockFs
+      'graceful-fs': mockFs
       minimatch: require 'minimatch'
       './preprocessors/Coffee': fakePreprocessor
       
